@@ -5,16 +5,16 @@ class HomePage extends StatelessWidget {
   String name = "Sahil Rai";
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: Container(
-            child: Text("Hello!, $name"),
-          ),
-        ),
-        drawer: Drawer(),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Catalog App"),
       ),
+      body: Center(
+        child: Container(
+          child: Text("Hello!, $name"),
+        ),
+      ),
+      drawer: Drawer(),
     );
   }
 }
